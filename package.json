@@ -1,0 +1,36 @@
+{
+  "name": "djs-marshal-template",
+  "version": "1.0.0",
+  "description": "A Discord bot template based on discord.js and djs-marshal",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index",
+    "build": "tsc",
+    "dev": "tsc -W"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeathVenom54/djs-marshal-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeathVenom54/djs-marshal-template/issues"
+  },
+  "homepage": "https://github.com/DeathVenom54/djs-marshal-template#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "discord.js": "^13.3.0",
+    "djs-marshal": "^0.2.0",
+    "dotenv": "^10.0.0"
+  }
+}
