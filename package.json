@@ -1,10 +1,10 @@
 {
-  "name": "djs-marshal-template",
+  "name": "meme-it",
   "version": "1.0.0",
-  "description": "A Discord bot template based on discord.js and djs-marshal",
-  "main": "index.js",
+  "description": "A Discord bot to express yourself in memes",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/index",
+    "start": "node dist/index.js",
     "build": "tsc",
     "dev": "tsc -W"
   },
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/DeathVenom54/djs-marshal-template#readme",
   "devDependencies": {
+    "@types/sharp": "^0.31.1",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "eslint": "^8.1.0",
@@ -29,8 +30,10 @@
     "typescript": "^4.4.4"
   },
   "dependencies": {
-    "discord.js": "^13.3.0",
-    "djs-marshal": "^0.2.0",
-    "dotenv": "^10.0.0"
+    "discord.js": "14",
+    "djs-marshal": "^2.1.0",
+    "dotenv": "^10.0.0",
+    "nanoid": "3",
+    "sharp": "^0.31.3"
   }
 }

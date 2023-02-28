@@ -1,12 +1,15 @@
-require('dotenv').config();
+import * as process from 'process';
+
+import { config } from 'dotenv';
+config();
 
 import path from 'path';
 import { initializeBot } from 'djs-marshal';
-import { Intents } from 'discord.js';
+import { IntentsBitField } from 'discord.js';
 
 const client = initializeBot({
-  intents: [Intents.FLAGS.GUILDS],
+  intents: [IntentsBitField.Flags.Guilds],
   slashCommandsPath: path.join(__dirname, 'commands'),
 });
 
-void client.login(process.env.token);
+void client.login(process.env.NODE_ENV === 'prod' ? process.env.PROD_TOKEN : process.env.DEV_TOKEN);
